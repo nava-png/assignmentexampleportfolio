@@ -4,38 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navagation | Your Learning Guide</title>
-
-    <!-- React & ReactDOM -->
+    
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- Babel for JSX -->
+    
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <!-- Tailwind CSS -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        paper: '#FFF9F5',
-                        ink: '#4A3B32',
-                        peach: '#FFB5A7',
-                        apricot: '#FCD5CE',
-                        mint: '#B0EACD',
-                        sage: '#81B29A',
-                        rose: '#FEC5BB',
+                        paper: '#FFF9F5', // Very light cream
+                        ink: '#4A3B32', // Dark brown for text
+                        peach: '#FFB5A7', // Soft orange/pink
+                        apricot: '#FCD5CE', // Lighter orange
+                        mint: '#B0EACD', // Soft Green
+                        sage: '#81B29A', // Darker Green
+                        rose: '#FEC5BB', // Pink
                     },
                     fontFamily: {
                         sans: ['Quicksand', 'sans-serif'],
@@ -64,7 +58,6 @@
 
     <div id="root"></div>
 
-    <!-- External JavaScript -->
     <script type="text/babel" src="main.js"></script>
 </body>
 </html>
