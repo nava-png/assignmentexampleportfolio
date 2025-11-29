@@ -21,7 +21,9 @@
 /* Notebook Grid Background */
 .grid-bg {
     background-color: #FFF9F5;
-    background-image: linear-gradient(#FCD5CE 1px, transparent 1px), linear-gradient(90deg, #FCD5CE 1px, transparent 1px);
+    background-image: 
+        linear-gradient(#FCD5CE 1px, transparent 1px),
+        linear-gradient(90deg, #FCD5CE 1px, transparent 1px);
     background-size: 30px 30px;
 }
 
