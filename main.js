@@ -1,35 +1,34 @@
-Save this code as main.js.
 const { useState, useEffect, useRef } = React;
 
 // --- Cute Icons ---
 const Icons = {
     Pin: ({ className }) => (
-        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
             <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
         </svg>
     ),
     Star: ({ className }) => (
-        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
             <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
         </svg>
     ),
     Heart: ({ className }) => (
-        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
             <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
         </svg>
     ),
     Menu: ({ className }) => (
-        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
             <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
         </svg>
     ),
         ArrowRight: ({ className }) => (
-        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
             <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
         </svg>
     ),
     Close: ({ className }) => (
-        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
                 <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
         </svg>
     )
@@ -168,21 +167,21 @@ const Projects = () => {
             title: "Compliance Detective",
             desc: "Transformed mandatory data privacy training into a noir-style interactive mystery. Learners find security breaches to solve the case.",
             color: "bg-rose-100",
-            link: "[https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing](https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing)"
+            link: "https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing"
         },
         {
             icon: <Icons.Star className="w-8 h-8 text-orange-500"/>,
             title: "CRM Flight Simulator",
             desc: "A safe sandbox environment for sales teams to practice in the new Salesforce instance before go-live. Reduced data errors by 60%.",
             color: "bg-orange-100",
-            link: "[https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing](https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing)"
+            link: "https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing"
         },
         {
             icon: <Icons.Heart className="w-8 h-8 text-teal-500"/>,
             title: "Manager Bootcamp",
             desc: "A blended 6-week cohort program mixing live workshops with Slack-based daily challenges. Decreased leadership churn by 15%.",
             color: "bg-teal-100",
-            link: "[https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing](https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing)"
+            link: "https://docs.google.com/document/d/18p70IBmiBBiSs6e6nNZr41-zNhfnRHyGhD41vF2RZFk/edit?usp=sharing"
         }
     ];
 
@@ -209,7 +208,7 @@ const About = () => {
                         <div className="relative group">
                         <div className="absolute inset-0 bg-peach rounded-[2rem] rotate-3 group-hover:rotate-6 transition-transform"></div>
                         <img 
-                            src="[https://images.unsplash.com/photo-1596962850195-da486dc3a974?q=80&w=2195&auto=format&fit=crop](https://images.unsplash.com/photo-1596962850195-da486dc3a974?q=80&w=2195&auto=format&fit=crop)" 
+                            src="https://images.unsplash.com/photo-1596962850195-da486dc3a974?q=80&w=2195&auto=format&fit=crop" 
                             alt="Peaceful nature path" 
                             className="relative rounded-[2rem] border-4 border-white object-cover h-80 w-full"
                         />
